@@ -1,0 +1,118 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/USER/VHDL
+Ealu
+Z1 w1616394109
+!i122 120
+R0
+Z2 8alu.vhd
+Z3 Falu.vhd
+l0
+L17 1
+Vh0h;czA=5oSVeCZOHk[K:3
+!s100 :AMR[55QOHL[AlGXX?a_l3
+Z4 OV;C;2020.1;71
+33
+Z5 !s110 1616394282
+!i10b 1
+Z6 !s108 1616394282.000000
+Z7 !s90 -reportprogress|300|alu.vhd|-2008|
+Z8 !s107 alu.vhd|
+!i113 1
+Z9 o-2008
+Z10 tExplicit 1 CvgOpt 0
+Aalu_arc
+Z11 DEx4 work 3 alu 0 22 h0h;czA=5oSVeCZOHk[K:3
+!i122 120
+l29
+Z12 L28 50
+Z13 VO=]lV91UUmj;3Xn>cL4903
+Z14 !s100 B;XMX`n:8zW0f[D:;o:GF3
+R4
+33
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Edemux
+Z15 w1615450812
+!i122 32
+R0
+Z16 8demux.vhd
+Z17 Fdemux.vhd
+l0
+L1 1
+VYXFJ8kKJgT`DdK>]APaR<3
+!s100 Yo4K]mc2YF;hWjbK3hPnZ3
+R4
+32
+Z18 !s110 1616354398
+!i10b 1
+Z19 !s108 1616354398.000000
+Z20 !s90 -reportprogress|300|demux.vhd|
+Z21 !s107 demux.vhd|
+!i113 1
+R10
+Ademux_arc
+DEx4 work 5 demux 0 22 YXFJ8kKJgT`DdK>]APaR<3
+!i122 32
+l9
+L8 7
+VA5SIn@]V_^:LhJVFj]g:T2
+!s100 5^i4ke3JHO:XE18MMEVFM1
+R4
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R10
+Emux
+Z22 w1615443431
+!i122 4
+R0
+Z23 8mux.vhd
+Z24 Fmux.vhd
+l0
+L1 1
+Vd:206^6hKM:dG[;G9S<F72
+!s100 @<j1]f:H<WZnCnjkUa:S@0
+R4
+32
+Z25 !s110 1615443433
+!i10b 1
+Z26 !s108 1615443433.000000
+Z27 !s90 -reportprogress|300|mux.vhd|
+Z28 !s107 mux.vhd|
+!i113 1
+R10
+Amux_arc
+DEx4 work 3 mux 0 22 d:206^6hKM:dG[;G9S<F72
+!i122 4
+l9
+L8 9
+V<VVfoT:NVd<RBNzcKE;JW3
+!s100 GN;63QQE6?jg@hDdWi1aM2
+R4
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R10
