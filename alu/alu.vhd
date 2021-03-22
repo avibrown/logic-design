@@ -4,16 +4,16 @@
 --    Aviel Brown	
 --=================
 
--- 	==============
--- 	| ALU Logic	 |
--- 	==============
---	| op | q_out | --> when (q_out = 0) :  z = 1
---  --------------
---  | 00 | a + b | --> when (q_out > 15):  c = 1
---  | 01 | a - b | --> when (q_out < 0) :  c = 1
---  | 10 | a * b | --> when (q_out > 15):  c = 1
---  | 11 | a / b | --> when (b < 10)    :  c = 1
---  ==============
+-- ==============
+-- | ALU Logic  |
+-- ==============
+-- | op | q_out | --> when (q_out = 0) :  z = 1
+-- --------------
+-- | 00 | a + b | --> when (q_out > 15):  c = 1
+-- | 01 | a - b | --> when (q_out < 0) :  c = 1
+-- | 10 | a * b | --> when (q_out > 15):  c = 1
+-- | 11 | a / b | --> when (b < 10)    :  c = 1
+-- ==============
 
 
 
@@ -35,7 +35,7 @@ begin
 		begin
 
 			case(op) is
-				when "00" =>
+				when "00" =>					-- addition
 					if (a + b) <= 15 then
 						q_out <= (a + b);
 						c <= '0';
@@ -44,7 +44,7 @@ begin
 						c <= '1';
 					end if;
 
-				when "01" =>
+				when "01" =>					-- subtraction
 					if (a - b) < 0 then
 						q_out <= abs(a - b);
 						c <= '1';
@@ -53,7 +53,7 @@ begin
 						c <= '0';
 					end if;
 
-				when "10" =>
+				when "10" =>					-- multiplication
 					if (a * b) <= 15 then
 						q_out <= (a * b);
 						c <= '0';
@@ -62,7 +62,7 @@ begin
 						c <= '1';
 					end if;
 
-				when "11" =>
+				when "11" =>					-- division
 					if b = 0 then
 						q_out <= 0;
 						c <= '1';
