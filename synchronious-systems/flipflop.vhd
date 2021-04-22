@@ -1,19 +1,29 @@
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+entity synchronious is
 
-entity clocked is
-end entity;
+    port(
 
-architecture clk of clocked is
+        J, K, rst, clk : in bit;
+        Q              : out bit
 
-    constant frequency  : integer   := 100e6; -- 100Mhz
-    constant period     : time      := 1000ms / frequency;
+    );
 
-    signal clk : std_logic := '1'; 
+end entity synchronious;
+
+
+
+architecture flipflop of synchronious is
 
 begin
 
-    clk <= not clk after period / 2;
+    process(clk, rst)
 
-end architecture;
+    begin
+        if rst = '0' then
+            Q <= '0';
+        elsif clk'event and clk = '1' then
+            Q <= J and K;
+        end if;
+
+		end process;
+
+end architecture flipflop;
