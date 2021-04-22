@@ -31,13 +31,12 @@ begin
 							Q <= '1';
 
 						elsif J = '1' and K = '1' then
-            Q <= not Q;
 
-        		end if;
+                        end if;
 
-				end if;
+		end if;
 
-		end process;
+	end process;
 
 Q_hat <= not Q;
 
