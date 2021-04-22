@@ -1,3 +1,15 @@
+--=================
+--    Logic Design	
+--    Assignment 3
+--    Aviel Brown	
+--=================
+
+-- ====================================
+-- |    Synchronous Counter Unit      |
+-- ====================================
+-- | Counts from 0-255, resets on low |
+-- ====================================
+
 entity counter is
 
     port(
