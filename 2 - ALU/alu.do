@@ -3,9 +3,16 @@ vcom alu.vhd -2008
 vsim alu
 
 add wave -divider Inputs:
-add wave -color yellow a b op
+add wave -color yellow a b
+
+add wave -divider Op:
+add wave -color red op
+
 add wave -divider Outputs:
-add wave -color cyan q_out c z
+add wave -color cyan q_out
+
+add wave -divider Flags:
+add wave -color green c z
 run
 
 -- addition tests
