@@ -2,9 +2,9 @@ quit -sim
 vcom counter.vhd -2008
 vsim counter
 
----------------------------
--- dividers
----------------------------
+#--------------------------
+# dividers
+#--------------------------
 
 add wave -divider clock:
 add wave -color green clk
@@ -21,13 +21,14 @@ add wave -color purple ec
 run
 
 
-----------------------------
--- tests
-----------------------------
+#---------------------------
+# tests
+#---------------------------
 
 force clk 0, 1 10ps -r 20ps
-force rst 0, 1 10ps -r 5500ps
-run 6000ps -- long enough to see full cycle and reset
+force rst 0, 1 10ps -r 6000ps
+
+run 8000ps
 
 
 
