@@ -15,13 +15,17 @@
 -- | Counts from 0-255, resets on low |
 -- ====================================
 
+library ieee;
+use ieee.std_logic_1164.all;
+
+
 entity counter is
 
     port(
 
-        clk      : in  bit;
-        rst      : in  bit := '1';
-        EC       : out bit;
+        clk      : in  std_logic;
+        rst      : in  std_logic := '1';
+        EC       : out  std_logic;
         Q_out    : out integer := 0
 
     );
